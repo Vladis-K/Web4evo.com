@@ -1,0 +1,21 @@
+.blockLayout {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  padding: 0 5%; }
+
+.noteBlock {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 20px 10px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 10px 0 #000;
+  box-shadow: 1px 1px 10px 0 #000;
+  text-align: center;
+  word-break: break-all; }
+
+.parallax-container {
+  height: 600px; }

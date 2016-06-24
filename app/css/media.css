@@ -4,10 +4,17 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+
+[class~=backgroundHide] {
+      border: 5px solid yellow;
+}
+
 
 }
 
@@ -15,12 +22,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-/*.smDevice {
-	background-color: #3797bf;
-	display: none;
-	position: absolute;
-	width: 100%;
-}*/
+[class~=backgroundHide] {
+      display: none;
+}
+
 
 }
 
@@ -33,7 +38,12 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
+
+
 }
+
+
+
 
 
 /*====  Mobile First Method  ====*/

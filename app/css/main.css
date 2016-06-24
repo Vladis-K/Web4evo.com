@@ -1,21 +1,93 @@
-.blockLayout {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  padding: 0 5%; }
+body {
+/*font-family: Arial, Verdana, sans-serif;*/
+  margin: 0px;
+  padding: 0px;
+ }
 
-.noteBlock {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 20px 10px;
-  width: 100%;
-  -webkit-box-shadow: 1px 1px 10px 0 #000;
-  box-shadow: 1px 1px 10px 0 #000;
-  text-align: center;
-  word-break: break-all; }
+.uppeNavigation{
+  position: absolute;
+  background-color: rgba(0,0,0,.15)
+}
+
+ul.right li a {
+ position: relative;
+ color: #F0F0F0;
+ font-weight: normal;
+ z-index: 1;
+}
+
+ul.footerLinks li a{
+display: inline-block;
+}
+
+.section{
+   height: 600px;
+   margin: 0px;
+   padding: 0px;
+}
 
 .parallax-container {
-  height: 600px; }
+  height: 700px;
+}
+
+/*web4evo LOGO*/
+.logotype{
+color: #cccccc;
+}
+/*Red digit 4*/
+.mid{
+color: #ff0000;
+}
+
+div.redLine{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px; 
+}
+
+.shade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.65);
+}
+
+.backgroundImg{
+  position: absolute;;
+  height: 600px;
+  margin:0px;
+  padding: 0px;
+  z-index: 0;
+}
+
+div.footerUp{
+
+  text-align: center;
+  margin: 0px;
+}
+
+/*div.page-footer > div.row {
+    margin: 0px;
+}*/
+div.copyright {
+  background-color: #323232;
+  color: #cccccc;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+
+div.signline {
+
+  background-color: #FF0000;
+  height: 1px;
+  width: 100%;
+}
+
+
+

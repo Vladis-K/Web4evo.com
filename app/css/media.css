@@ -5,14 +5,13 @@
 @media only screen and (max-width : 1200px) {
 
 
-}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
 
 [class~=backgroundHide] {
-      border: 5px solid yellow;
+      display:none;
 }
 
 
@@ -23,14 +22,21 @@
 @media only screen and (max-width : 768px) {
 
 [class~=backgroundHide] {
-      display: none;
+      display:none;
 }
+
+
+}
+
+@media only screen and (max-width : 600px) {
+  
 
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
 
 
 }

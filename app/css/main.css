@@ -1,24 +1,8 @@
 body {
-/*font-family: Arial, Verdana, sans-serif;*/
+  font-family: Helvetica, Arial, sans-serif; 
   margin: 0px;
   padding: 0px;
  }
-
-.uppeNavigation{
-  position: absolute;
-  background-color: rgba(0,0,0,.15)
-}
-
-ul.right li a {
- position: relative;
- color: #F0F0F0;
- font-weight: normal;
- z-index: 1;
-}
-
-ul.footerLinks li a{
-display: inline-block;
-}
 
 .section{
    height: 600px;
@@ -28,23 +12,8 @@ display: inline-block;
 
 .parallax-container {
   height: 700px;
-}
-
-/*web4evo LOGO*/
-.logotype{
-color: #cccccc;
-}
-/*Red digit 4*/
-.mid{
-color: #ff0000;
-}
-
-div.redLine{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 50px;
-  width: 50px; 
+  width: 100%;
+  text-align: center;
 }
 
 .shade{
@@ -56,7 +25,64 @@ div.redLine{
   background-color: rgba(0,0,0,.65);
 }
 
-.backgroundImg{
+/*Upper navbar*/
+.uppeNavigation {
+  position: absolute;
+  background-color: rgba(0,0,0,.4)
+}
+
+ul.right li a {
+ position: relative;
+ color: #F0F0F0;
+ font-weight: normal;
+ z-index: 1;
+}
+
+a.logotype {
+ z-index: 2;
+ color: #cdcdcd;
+}
+
+/*web4evo LOGO*/
+div.mainSign {
+   margin-top: 250px;  
+}
+
+h5.header, h1.header {
+ color: #cdcdcd;
+ z-index: 100;
+ margin-bottom: 0px;
+ margin-top: 2px;
+}
+
+/*Upper Red line of Logo*/
+div.signlineUpper {
+  background-color: #FF0000;
+  height: 4px;
+  width:250px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+
+
+/*Red digit 4*/
+.mid{
+color: #ff0000;
+}
+
+/*Red Button*/
+.btn {
+  background-color: #cccaca; 
+  color: #000000;
+}
+
+.btn:hover {
+  background-color: #ff0000; 
+}
+
+
+.backgroundHide{
   position: absolute;;
   height: 600px;
   margin:0px;
@@ -64,15 +90,53 @@ div.redLine{
   z-index: 0;
 }
 
-div.footerUp{
+/*Mid colunms*/
+.midColumn{
+  text-align: center;
+  padding-top: 100px;
+}
 
+div img.logo{
+  width: 80px;
+  padding: 0px;
+  margin: 0px; 
+}
+
+/*Redline of middle columns*/
+
+p.visualFont + div{
+  background-color: #FF0000;
+  height: 3px;
+  width: 90%;
+  margin: auto; 
+}
+
+
+p.visualFont{
+  text-transform: uppercase;
+  font-size: 33px;
+  margin: 0px;
+  padding: 0px;
+}
+
+div img.logo + p{
+text-transform: uppercase;
+}
+
+/*Footer*/
+div.footerUp{
   text-align: center;
   margin: 0px;
 }
 
-/*div.page-footer > div.row {
-    margin: 0px;
-}*/
+/*IMAGES HTML, CSS, ANGULAR...*/
+div.progs img{
+    margin: 20px 20px 0px 20px;
+    padding: 0px;
+    border: 2px solid #ff0000;
+    height: 100px;
+}
+
 div.copyright {
   background-color: #323232;
   color: #cccccc;
@@ -82,12 +146,10 @@ div.copyright {
   width: 100%;
 }
 
-div.signline {
-
+/*Thin Red line on the top and the bottom of site*/
+div.styleline {
   background-color: #FF0000;
   height: 1px;
   width: 100%;
 }
-
-
 

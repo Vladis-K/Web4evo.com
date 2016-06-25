@@ -37,7 +37,7 @@ ul.right li a {
 
 ul.right li a:hover{
   background-color: rgba(0,0,0,.70);
-
+  color: #FFFFFF;
 }
 
 a.logotype {
@@ -47,7 +47,7 @@ a.logotype {
 
 /*web4evo LOGO*/
 div.mainSign {
-   margin-top: 250px;  
+  margin-top: 250px;  
 }
 
 h5.header, h1.header {
@@ -111,33 +111,30 @@ div img.logo{
   margin: 0px; 
 }
 
-div img.logo + p, [p=] {
+div img.logo + p {
 text-transform: uppercase;
 }
 
 /*Redline of middle columns*/
 
-p.visualFont + div{
+p.visualFont + div {
+
   background-color: #FF0000;
   height: 3px;
-  width: 90%;
+  width: 80%;
   margin: auto; 
 }
 
-p > p{
-  background-color: #B2B2B2;
-  margin: 0px;
-  padding: 0px; 
+p.upperTextStyle{
+  text-transform: uppercase;
 }
-
-
 p.visualFont{
+  letter-spacing: -1px;
   text-transform: uppercase;
   font-size: 33px;
   margin: 0px;
   padding: 0px;
 }
-
 
 
 /*Footer*/
@@ -163,4 +160,3 @@ div.copyright {
   width: 100%;
   border-bottom: 1px solid red;
 }
-

@@ -25,12 +25,12 @@
     width: 50px;
     height: 6px;
     background-color: rgba(255,0,0,.3);
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
 }
 
 .dotted a:hover{
-    width: 80px;
+    width: 50px;
     height: 6px;
     background-color: #FFBEBE;
 
@@ -45,24 +45,16 @@
 
 #section01 {
     position: absolute;
-    top: 10%;
-    left: 0;
-    height: 30px;
-    width: 420px;
+    top: 0px;
 }
 
 #section02 {
     position: absolute;
-    top: 120%;
-    left: 0;
-    height: 50px;
-    width: 420px;
+    top: 1200px;
 }
 
 #section03 {
     position: absolute;
-    top: 240%;
-    left: 0;
-    height:50px;
-    width: 420px;
+    top: 2400px;
+
 }

@@ -1,162 +1,122 @@
 body {
-  font-family: Helvetica, Arial, sans-serif; 
-  margin: 0px;
-  padding: 0px;
- }
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
 
-.section{
-   height: 600px;
-   margin: 0px;
-   padding: 0px;
-}
+section {
+  height: 600px;
+  margin: 0;
+  padding: 0; }
 
 .parallax-container {
   height: 700px;
   width: 100%;
   text-align: center;
-}
+  background-color: rgba(0, 0, 0, 0.55);
+  /*Upper navbar*/ }
 
-.shade{
-  background-color: rgba(0,0,0,.55);
-}
-
-/*Upper navbar*/
-nav.uppeNavigation {
-  position: absolute;
-  background-color: rgba(0,0,0,.4);
-}
-
-ul.right li a {
- position: relative;
- color: #F0F0F0;
- font-weight: normal;
- z-index: 1;
-  -webkit-transition: background-color .5s;
-  transition: background-color .5s;
-}
-
-ul.right li a:hover{
-  background-color: rgba(0,0,0,.70);
-  color: #FFFFFF;
-}
-
-a.logotype {
- z-index: 2;
- color: #cdcdcd;
-}
+nav {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  nav li > a {
+    color: #c8c8c8;
+    font-weight: 100;
+    z-index: 1;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s; }
+  nav li > a:hover {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; }
 
 /*web4evo LOGO*/
-div.mainSign {
-  margin-top: 250px;  
-}
+.mainSign {
+  margin-top: 250px; }
 
 h5.header, h1.header {
- color: #cdcdcd;
- z-index: 100;
- margin-bottom: 0px;
- margin-top: 2px;
-}
+  color: #cdcdcd;
+  z-index: 100;
+  margin-bottom: 0;
+  margin-top: 2px; }
 
 /*Upper Red line of Logo*/
-div.signlineUpper {
+.signlineUpper {
   background-color: #FF0000;
   height: 4px;
-  width:250px;
+  width: 250px;
   margin: 0 auto;
-  padding: 0px;
-}
-
+  padding: 0; }
 
 /*Red digit 4*/
-.mid{
-color: #ff0000;
-}
-
-/*div:nth-child(2){
-  color: #ff0000;
-}*/
+.mid {
+  color: #ff0000; }
 
 h1.header:nth-child(2) {
-  color: #ff0000;
-}
+  color: #ff0000; }
 
 /*Red Button*/
 .btn {
-  background-color: #cccaca; 
-  color: #000000;
-}
+  background-color: #cccaca;
+  color: #000000; }
 
 .btn:hover {
-  background-color: #ff0000; 
-}
+  background-color: #ff0000; }
 
-
-.backgroundHide{
-  position: absolute;;
+.backgroundHide {
+  position: absolute;
   height: 600px;
-  margin:0px;
-  padding: 0px;
-  z-index: 0;
-}
+  margin: 0;
+  padding: 0;
+  z-index: 0; }
 
 /*Mid colunms*/
-.midColumn{
+.midColumn {
   text-align: center;
-  padding-top: 100px;
-}
+  padding-top: 100px; }
 
-div img.logo{
+div img.logo {
   width: 80px;
-  padding: 0px;
-  margin: 0px; 
-}
+  padding: 0;
+  margin: 0; }
 
 div img.logo + p {
-text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 /*Redline of middle columns*/
-
-p.visualFont + div {
-
+p .visualFont + div {
   background-color: #FF0000;
   height: 3px;
   width: 80%;
-  margin: auto; 
-}
+  margin: auto; }
 
-p.upperTextStyle{
-  text-transform: uppercase;
-}
-p.visualFont{
+.upperTextStyle {
+  text-transform: uppercase; }
+
+.visualFont {
   letter-spacing: -1px;
   text-transform: uppercase;
   font-size: 33px;
-  margin: 0px;
-  padding: 0px;
-}
-
+  margin: 0;
+  padding: 0; }
 
 /*Footer*/
-div.footerUp{
+.footerUp {
   text-align: center;
-  margin: 0px;
-}
+  margin: 0; }
 
 /*IMAGES HTML, CSS, ANGULAR...*/
-div.progs img{
-    margin: 20px 20px 0px 20px;
-    padding: 0px;
-    border: 2px solid #ff0000;
-    height: 100px;
-}
+.progs img {
+  margin: 20px 20px 0 20px;
+  padding: 0;
+  border: 2px solid #ff0000;
+  height: 100px; }
 
-div.copyright {
+footer {
   background-color: #323232;
   color: #cccccc;
   text-align: center;
   height: 50px;
   line-height: 50px;
   width: 100%;
-  border-bottom: 1px solid red;
-}
+  border-bottom: 1px solid red; }

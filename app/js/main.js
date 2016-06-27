@@ -1,8 +1,7 @@
 $(document).ready(function(){
 	$('.parallax').parallax();
 
-
-		 // Pagination
+   	 // Pagination
           var parPosition = [];
         $('.par').each(function() {
             parPosition.push($(this).offset().top);

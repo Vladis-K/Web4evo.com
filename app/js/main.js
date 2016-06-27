@@ -42,7 +42,20 @@ $(document).ready(function(){
         	$('.dotted ul li a').click(function () {
 			$('.dotted ul li a').removeClass('active');
 				$(this).addClass('active');
-	});   
+	}); 
+
+    //FadeIn code
+  var shots = $(".shot").fadeTo(0, 0);
+
+  $('.container').scroll(function(d,h) {
+      shots.each(function(i) {
+          a = $(this).offset().top + $(this).height();
+          b = $('#portfolio').scrollTop() + $('.container').height();
+          if (a < b) $(this).fadeTo(1600,1);
+      });
+  });
+      
+
 });
 
 

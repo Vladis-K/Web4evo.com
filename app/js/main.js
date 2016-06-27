@@ -1,12 +1,18 @@
 $(document).ready(function(){
 	$('.parallax').parallax();
 
+    $(window).scroll(function () {
+        display = $(this).scrollTop();
+        opRange = 1 - display / 100;
+        $("nav").css("opacity" , opRange);
+    });
+
    	 // Pagination
-          var parPosition = [];
+        var parPosition = [];
         $('.par').each(function() {
             parPosition.push($(this).offset().top);
         });
-        
+
 		$('a').click(function(){
 			$('html, body').animate({
 				scrollTop: $( $.attr(this, 'href') ).offset().top

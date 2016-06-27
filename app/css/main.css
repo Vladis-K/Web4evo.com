@@ -18,7 +18,10 @@ section {
 nav {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 1; }
   nav li > a {
     color: #c8c8c8;
     font-weight: 100;
@@ -120,3 +123,52 @@ footer {
   line-height: 50px;
   width: 100%;
   border-bottom: 1px solid red; }
+
+.dotted {
+  position: fixed;
+  top: 40%;
+  left: 80%;
+  width: 50px;
+  z-index: 10;
+  list-style-type: none; }
+
+.dotted ul {
+  position: relative;
+  padding: 5px;
+  padding-left: 20%; }
+
+.dotted ul li {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 35%;
+  color: #FF0000; }
+
+.dotted a {
+  display: block;
+  width: 50px;
+  height: 6px;
+  background-color: rgba(255, 0, 0, 0.3);
+  -webkit-transition: 1.5s;
+  transition: 1.5s; }
+
+.dotted a:hover {
+  width: 50px;
+  height: 6px;
+  background-color: #FFBEBE; }
+
+.dotted a.active {
+  width: 80px;
+  height: 6px;
+  background-color: #FF0000; }
+
+#section01 {
+  position: absolute;
+  top: 0; }
+
+#section02 {
+  position: absolute;
+  top: 2000px; }
+
+#section03 {
+  position: absolute;
+  top: 3420px; }

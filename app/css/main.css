@@ -50,18 +50,25 @@ div.mainSign {
   margin-top: 250px;  
 }
 
-h5.header, h1.header {
+h5.header, h1.header,h3 {
  color: #cdcdcd;
  z-index: 100;
  margin-bottom: 0px;
  margin-top: 2px;
+ padding: 0;
+}
+
+
+
+h1, h3, div img.logo + p {
+text-transform: uppercase;
 }
 
 /*Upper Red line of Logo*/
 div.signlineUpper {
   background-color: #FF0000;
   height: 4px;
-  width:250px;
+  width:42%;
   margin: 0 auto;
   padding: 0px;
 }
@@ -72,13 +79,6 @@ div.signlineUpper {
 color: #ff0000;
 }
 
-/*div:nth-child(2){
-  color: #ff0000;
-}*/
-
-h1.header:nth-child(2) {
-  color: #ff0000;
-}
 
 /*Red Button*/
 .btn {
@@ -111,9 +111,7 @@ div img.logo{
   margin: 0px; 
 }
 
-div img.logo + p {
-text-transform: uppercase;
-}
+
 
 /*Redline of middle columns*/
 

@@ -11,7 +11,7 @@ $(document).ready(function(){
 		$('a').click(function(){
 			$('html, body').animate({
 				scrollTop: $( $.attr(this, 'href') ).offset().top
-			}, 1200);
+			}, 1400);
 			return false;
 		});
         
@@ -44,17 +44,17 @@ $(document).ready(function(){
 				$(this).addClass('active');
 	}); 
 
-    //FadeIn code
-  var shots = $(".shot").fadeTo(0, 0);
 
-  $('.container').scroll(function(d,h) {
-      shots.each(function(i) {
-          a = $(this).offset().top + $(this).height();
-          b = $('#portfolio').scrollTop() + $('.container').height();
-          if (a < b) $(this).fadeTo(1600,1);
-      });
-  });
-      
+  //Плавное переключение
+// $("#menu").on("click","a", function (event) {
+//     event.preventDefault();
+//     var id  = $(this).attr('href'),
+//       top = $(id).offset().top;
+//     $('body,html').animate({
+//       scrollTop: top
+//     }, 5000);
+//   });
+
 
 });
 

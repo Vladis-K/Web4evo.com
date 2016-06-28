@@ -52,10 +52,7 @@ h5.header, h1.header {
   padding: 0; }
 
 /*Red digit 4*/
-.mid {
-  color: #ff0000; }
-
-h1.header:nth-child(2) {
+.mid, h1.header:nth-child(2) {
   color: #ff0000; }
 
 /*Red Button*/
@@ -87,7 +84,7 @@ div img.logo + p {
   text-transform: uppercase; }
 
 /*Redline of middle columns*/
-p .visualFont + div {
+.visualFont + div {
   background-color: #FF0000;
   height: 3px;
   width: 80%;
@@ -112,7 +109,6 @@ p .visualFont + div {
 .progs img {
   margin: 20px 20px 0 20px;
   padding: 0;
-  border: 2px solid #ff0000;
   height: 100px; }
 
 footer {

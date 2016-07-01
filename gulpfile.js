@@ -1,16 +1,15 @@
 var gulp = require('gulp');
-var server = require('gulp-server-livereload'),
-	sass = require('gulp-sass'),
-	useref = require('gulp-useref'),
-    gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    minifyCss = require('gulp-minify-css'),
-    autoprefixer = require('gulp-autoprefixer'),
-	wiredep = require('wiredep').stream,
-    imagemin = require('gulp-imagemin'); 
+var sass = require('gulp-sass');
+var server = require('gulp-server-livereload');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
+var uglify = require('gulp-uglify');
+var minifyCss = require('gulp-csso');
+var autoprefixer = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
+var wiredep = require('wiredep').stream;
 
-
-//Server 
+//server
 gulp.task('server', function() {
     gulp.src('app')
         .pipe(server({
@@ -20,23 +19,23 @@ gulp.task('server', function() {
         }));
 });
 
-//Bower
+//bower
 gulp.task('bower', function () {
-  gulp.src('app/*.html')
-    .pipe(wiredep({
-      directory: 'app/bower_components'
-    }))
-    .pipe(gulp.dest('app'));
-}); 
+    gulp.src('app/*.html')
+        .pipe(wiredep({
+            directory:'app/bower_components'
+        }))
+        .pipe(gulp.dest('app'));
+});
 
-//Styles
-gulp.task('styles', function() {
+//styles
+gulp.task('styles', function () {
     return gulp.src('app/sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-			browsers: ['last 15 versions'],
-			cascade: false
-		}))
+            browsers: ['last 15 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('app/css'));
 });
 
@@ -59,13 +58,10 @@ gulp.task('build', ['images'], function () {
         .pipe(gulp.dest('build'));
 });
 
-
-
-//Watch
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     gulp.watch('app/sass/**/*.sass', ['styles']);
     gulp.watch('bower.json', ['bower']);
 });
 
-//Default
-gulp.task('default', ['server', 'watch']);
+//default
+gulp.task('default', ['server','watch']);

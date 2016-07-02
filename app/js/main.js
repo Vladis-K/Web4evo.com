@@ -3,8 +3,15 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
         display = $(this).scrollTop();
-        opRange = 1 - display / 100;
+        opRange = 1 - display / 300;
         $("nav").css("opacity" , opRange);
+        if (opRange > 0 ) {
+            $("nav").css("display" , 'inline');
+        }
+        else {
+            $("nav").css("display" , "none");
+        }
+
     });
 
    	 // Pagination

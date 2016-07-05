@@ -16,6 +16,7 @@
     "gulp-useref": "^3.0.8"
   },
   "dependencies": {
+    "normalize.css": "^4.2.0",
     "wiredep": "^4.0.0"
   },
   "author": "vantkovsky",

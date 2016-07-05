@@ -7,6 +7,7 @@
     <meta name="keywords" content="Website designing company"/>
     <meta name="Description" content="Web4evo is a web development agency that offers Web Design, Graphic Design and Web Application. Our approach is unique, as a design"/>
     <title> Web4evo - web design & development</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
@@ -23,21 +24,24 @@
 
 <body>
 
-      <nav class="uppeNavigation" role="navigation">
+      <nav>
         <div class="nav-wrapper container">
            <a id="logo" href="#" class="brand-logo">web<span class="mid">4</span>evo</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">list</i>
+            </a>
            <ul class="right hide-on-med-and-down">
                <li><a href="#section01">About</a></li>
                <li><a href="#section02">Services</a></li>
                <li><a href="#section03">Approach</a></li>
                <li><a href="#bottom">Contact</a></li>
             </ul>
-            <ul id="nav-mobile" class="side-nav">
-               <li><a href="#">Menu</a></li>
+            <ul id="mobile-nav" class="side-nav">
+                <li><a href="#section01">About</a></li>
+                <li><a href="#section02">Services</a></li>
+                <li><a href="#section03">Approach</a></li>
+                <li><a href="#bottom" class="waves-light btn">Contact</a></li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse">
-               <i class="material-icons">list</i>
-            </a>
         </div>
       </nav>
       

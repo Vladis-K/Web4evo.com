@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.parallax').parallax();
-
+    $(".button-collapse").sideNav();
     $(window).scroll(function () {
         display = $(this).scrollTop();
         opRange = 1 - display / 300;

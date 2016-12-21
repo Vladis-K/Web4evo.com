@@ -46,6 +46,9 @@ nav
 		color: black
 		height: 50px
 
+i.material-icons
+	color: $text-color
+
 #sidenav-overlay
 	z-index: -1
 
@@ -78,10 +81,16 @@ h5, h1
 .mid, h1:nth-child(2), .btn:hover
 	color: $additional-color
 
-/*Red Button*/
-.btn
-	background-color: $text-color
-	color: #000000
+/*Button*/
+
+.innerCard
+	a
+		color: #000000
+		background-color: $text-color
+	:hover
+		color: #000000
+		background-color: #a2a2a2
+
 
 .backgroundHide, .extra
 	position: absolute
@@ -165,8 +174,7 @@ footer
 	left: 85%
 	max-width: 50px
 	z-index: 10
-	list-style-type: none 
-
+	list-style-type: none
 
 .dotted
 	ul

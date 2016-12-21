@@ -7,7 +7,7 @@ $(document).ready(function(){
         closeOnClick: true,
         draggable: true
     });
-    
+
     $(window).scroll(function () {
         var display = $(this).scrollTop();
         var opRange = 1 - display / 300;
@@ -26,15 +26,15 @@ $(document).ready(function(){
             parPosition.push($(this).offset().top);
         });
 
-    $("nav, .dotted").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body, html').animate({
-            scrollTop: top
-        }, 1200);
-    });
-    
+        $("nav, .dotted, .innerCard").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body, html').animate({
+                scrollTop: top
+            }, 1200);
+        });
+
 
         	$('.dotted ul li a').click(function () {
 			$('.dotted ul li a').removeClass('active');

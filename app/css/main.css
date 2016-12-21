@@ -43,6 +43,9 @@ nav {
     color: black;
     height: 50px; }
 
+i.material-icons {
+  color: #c8c8c8; }
+
 #sidenav-overlay {
   z-index: -1; }
 
@@ -73,10 +76,14 @@ h5, h1 {
 .mid, h1:nth-child(2), .btn:hover {
   color: #FF0000; }
 
-/*Red Button*/
-.btn {
-  background-color: #c8c8c8;
-  color: #000000; }
+/*Button*/
+.innerCard a {
+  color: #000000;
+  background-color: #c8c8c8; }
+
+.innerCard :hover {
+  color: #000000;
+  background-color: #a2a2a2; }
 
 .backgroundHide, .extra {
   position: absolute;

@@ -1,23 +1,68 @@
-$small: 320px
-$large: 1024px
+$extra-small: 320px
+$small: 600px
+$medium: 992px
+$large: 1200px
 
 @mixin respond-to($media)
   @if $media == handhelds
-    @media only screen and (max-width: $small)
+    @media only screen and (max-width: $extra-small)
+      @content
+
+  @else if $media == small-screens
+    @media only screen and (min-width: $extra-small + 1) and (max-width: $small - 1)
       @content
 
   @else if $media == medium-screens
-    @media only screen and (min-width: $small + 1) and (max-width: $large - 1)
+    @media only screen and (min-width: $small) and (max-width: $large - 1)
       @content
 
   @else if $media == wide-screens
     @media only screen and (min-width: $large)
       @content
 
+//Media parameters
+
 @include respond-to(handhelds)
-  [class~=backgroundHide]
+  [class~=extra]
     display: none
+  [class~=backgroundHide]
+    visibility: hidden
+  .parallax-container
+    height: 400px
+  .innerCard
+    p:nth-child(2), p:nth-child(4)
+      font-size: 150%
+  .middleCards
+    p:nth-child(3)
+      font-size: 150%
+  .progs
+    img
+      margin: 5px 5px 0 0
+      padding: 0
+      max-height: 35px
+  h1
+    font-size: 30px
+  h5
+    font-size: 90%
+
+@include respond-to(small-screens)
+  [class~=extra]
+    display: none
+  [class~=backgroundHide]
+    visibility: hidden
+  .visualFont
+    font-size: 20px
+  .progs
+    img
+      margin: 5px 5px 0 0
+      padding: 0
+      max-width: 55px
+
 @include respond-to(medium-screens)
-  [class~=backgroundHide]
-    display: none
+  [class~=extra]
+    max-width: 50%
+  #section04
+    top: 3550px
+
+
 @include respond-to(wide-screens)

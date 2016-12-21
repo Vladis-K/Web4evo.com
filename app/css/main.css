@@ -34,36 +34,38 @@ nav {
     color: white; }
 
 /*web4evo LOGO*/
+a.brand-logo {
+  color: #c8c8c8; }
+  a.brand-logo > span {
+    color: #FF0000; }
+
 .mainSign {
   margin-top: 250px; }
 
-h5.header, h1.header {
-  color: #cdcdcd;
+h5, h1 {
+  color: #c8c8c8;
   z-index: 100;
   margin-bottom: 0;
   margin-top: 2px; }
 
 /*Upper Red line of Logo*/
-.signlineUpper {
+.signline {
   background-color: #FF0000;
   height: 4px;
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0; }
 
 /*Red digit 4*/
-.mid, h1.header:nth-child(2) {
-  color: #ff0000; }
+.mid, h1:nth-child(2), .btn:hover {
+  color: #FF0000; }
 
 /*Red Button*/
 .btn {
-  background-color: #cccaca;
+  background-color: #c8c8c8;
   color: #000000; }
 
-.btn:hover {
-  background-color: #ff0000; }
-
-.backgroundHide {
+.backgroundHide, .extra {
   position: absolute;
   height: 600px;
   margin: 0;
@@ -76,29 +78,46 @@ h5.header, h1.header {
   padding-top: 100px; }
 
 div img.logo {
-  width: 80px;
+  max-width: 80px;
   padding: 0;
   margin: 0; }
 
-div img.logo + p {
-  text-transform: uppercase; }
+section.midColumn p {
+  text-transform: uppercase;
+  color: #00b0ff; }
 
 /*Redline of middle columns*/
-.visualFont + div {
-  background-color: #FF0000;
-  height: 3px;
-  width: 80%;
-  margin: auto; }
-
-.upperTextStyle {
+.innerCard p:nth-child(1) {
   text-transform: uppercase; }
 
-.visualFont {
+.innerCard p:nth-child(2), .innerCard p:nth-child(4) {
   letter-spacing: -1px;
   text-transform: uppercase;
   font-size: 33px;
   margin: 0;
   padding: 0; }
+
+.innerCard div:nth-child(3) {
+  background-color: #FF0000;
+  height: 3px;
+  width: 80%;
+  margin: auto; }
+
+.middleCards {
+  margin-bottom: 60px; }
+  .middleCards p:nth-child(2) {
+    text-transform: uppercase; }
+  .middleCards p:nth-child(3) {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-size: 33px;
+    margin: 0;
+    padding: 0; }
+  .middleCards div:nth-child(4) {
+    background-color: #FF0000;
+    height: 3px;
+    width: 80%;
+    margin: auto; }
 
 /*Footer*/
 .footerUp {
@@ -107,31 +126,29 @@ div img.logo + p {
 
 /*IMAGES HTML, CSS, ANGULAR...*/
 .progs img {
-  margin: 20px 20px 0 20px;
+  margin: 0;
   padding: 0;
-  height: 70px; }
+  max-width: 48px; }
 
 footer {
   background-color: #323232;
   color: #cccccc;
   text-align: center;
-  height: 50px;
-  line-height: 50px;
+  padding: 1%;
   width: 100%;
-  border-bottom: 1px solid red; }
+  border-bottom: 1px solid #FF0000; }
 
 .dotted {
   position: fixed;
-  top: 40%;
+  top: 36%;
   left: 85%;
-  width: 50px;
+  max-width: 50px;
   z-index: 10;
   list-style-type: none; }
 
 .dotted ul {
   position: relative;
-  padding: 5px;
-  padding-left: 20%; }
+  padding: 5px; }
 
 .dotted ul li {
   position: relative;
@@ -159,7 +176,7 @@ footer {
 
 #section01 {
   position: absolute;
-  top: 200px; }
+  top: 0; }
 
 #section02 {
   position: absolute;
@@ -171,4 +188,4 @@ footer {
 
 #section04 {
   position: absolute;
-  top: 3420px; }
+  top: 3450px; }

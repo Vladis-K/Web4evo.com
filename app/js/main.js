@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$('.parallax').parallax();
     $(".button-collapse").sideNav();
+
     $(window).scroll(function () {
         display = $(this).scrollTop();
         opRange = 1 - display / 300;
@@ -11,7 +12,6 @@ $(document).ready(function(){
         else {
             $("nav").css("display" , "none");
         }
-
     });
 
    	 // Pagination
@@ -38,7 +38,7 @@ $(document).ready(function(){
            $(this).find('.label').hide();
        });
         
-           $(document).scroll(function(){
+        $(document).scroll(function(){
         var position = $(document).scrollTop(),
                 index; 
                 for (var i=0; i<parPosition.length; i++) {
@@ -53,7 +53,7 @@ $(document).ready(function(){
         
         	$('.dotted ul li a').click(function () {
 			$('.dotted ul li a').removeClass('active');
-				$(this).addClass('active');
+            $(this).addClass('active');
 	});   
 });
 

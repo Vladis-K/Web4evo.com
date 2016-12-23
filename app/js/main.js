@@ -60,8 +60,8 @@ $(document).ready(function(){
         $('.range ul li a:eq('+index+')').addClass('active');
     });
 
-    $('.range ul li a').click(function () {
-        $('.range ul li a').removeClass('active');
-        $(this).addClass('active');
+        $('.range ul li a').click(function () {
+            $('.range ul li a').removeClass('active');
+            $(this).addClass('active');
     });
 });

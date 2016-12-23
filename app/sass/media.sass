@@ -39,11 +39,20 @@ $large: 1200px
     img
       margin: 5px 5px 0 0
       padding: 0
-      max-height: 35px
+      max-height: 50px
   h1
     font-size: 30px
   h5
     font-size: 90%
+  #section02
+    position: absolute
+    top: 400px
+  #section03
+    position: absolute
+    top: 1500px
+  #section04
+    position: absolute
+    top: 3450px
 
 @include respond-to(small-screens)
   [class~=extra]
@@ -54,13 +63,25 @@ $large: 1200px
     img
       margin: 5px 5px 0 0
       padding: 0
-      max-width: 55px
+      max-width: 65px
+  #section04
+    position: absolute
+    top: 3250px
 
 @include respond-to(medium-screens)
   [class~=extra]
     max-width: 50%
+  .progs
+    img
+      margin: 5px 5px 0 0
+      padding: 0
+      max-width: 70px
   #section04
-    top: 3550px
-
+    top: 3580px
 
 @include respond-to(wide-screens)
+  .progs
+    img
+      margin: 5px 5px 0 0
+      padding: 0
+      max-width: 80px

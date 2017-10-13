@@ -5,6 +5,11 @@ body
 	font-family: Helvetica, Arial, sans-serif
 	margin: 0
 	padding: 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+::-webkit-scrollbar
+	display: none
 
 section
 	height: 600px
@@ -72,7 +77,7 @@ h5, h1
 
 .signline
 	background-color: $additional-color
-	height: 4px
+	height: 3px
 	max-width: 300px
 	margin: 0 auto
 	padding: 0
@@ -87,9 +92,11 @@ h5, h1
 	a
 		color: #000000
 		background-color: $text-color
-	:hover
+	.waves-effect:hover
+		opacity: .8
+		background-color: $text-color
 		color: #000000
-		background-color: #a2a2a2
+
 
 
 .backgroundHide, .extra
@@ -147,11 +154,20 @@ section.midColumn p
 		width: 80%
 		margin: auto
 
+.description
+  opacity: .8
+
 /*Footer*/
 
-.footerUp
+.footer-content
 	text-align: center
-	margin: 0
+    margin: 0
+
+.contact-sign
+  font-size: 15px
+  font-weight: 600
+  margin-bottom: 0
+
 
 footer
 	background-color: #323232
@@ -218,5 +234,3 @@ div.range
 #section04
 	position: absolute
 	top: 3450px
-
-
